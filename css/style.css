@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.section {
+  padding: 5% 10%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #cbe895, #16242c);
+  display: flex;
+}
+@media (max-width: 796px) {
+  .section {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.section .part-1 {
+  width: 20%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 796px) {
+  .section .part-1 {
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+  }
+}
+.section .part-1 img {
+  max-width: 300px;
+}
+.section .part-2 {
+  width: 80%;
+  height: 100%;
+  background-image: url("../img/203514.jpg");
+  background-size: cover;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 22px;
+  box-shadow: 0px 0px 100px #000;
+}
+@media (max-width: 1076px) {
+  .section .part-2 {
+    justify-content: center;
+  }
+}
+@media (max-width: 796px) {
+  .section .part-2 {
+    width: 100%;
+    height: 80%;
+  }
+}
+.section .part-2 .card {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5607843137);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 5%;
+}
+@media (max-width: 1076px) {
+  .section .part-2 .card {
+    width: 100%;
+  }
+}
+.section .part-2 .card span {
+  color: #113e3d;
+  font-size: 2em;
+  padding-top: 0;
+  background-color: transparent;
+}
+.section .part-2 .card span strong {
+  color: #5fa376;
+}
+.section .part-2 .card p {
+  padding-bottom: 15%;
+}
+.section .part-2 .card form {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+.section .part-2 .card form label {
+  font-weight: 900;
+  color: #113e3d;
+}
+.section .part-2 .card form input {
+  width: 100%;
+  height: 3em;
+  font-size: 1em;
+  color: #113e3d;
+  background-color: transparent;
+  border: #1b4c45 solid 2px;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+.section .part-2 .card form input:focus {
+  outline: none;
+  border: #5fa376 2px solid;
+}
+.section .part-2 .card form input::-moz-placeholder {
+  color: #113e3d;
+}
+.section .part-2 .card form input::placeholder {
+  color: #113e3d;
+}
+.section .part-2 .card form .check {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.section .part-2 .card form .check input {
+  width: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.section .part-2 .card form .check span {
+  padding: 0;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+.section .part-2 .card form .check input[type=checkbox] {
+  display: none;
+}
+.section .part-2 .card form .check input[type=checkbox] + span:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc; /* Cor do checkbox não marcado */
+  border-radius: 3px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.section .part-2 .card form .check input[type=checkbox]:checked + span:before {
+  background-color: #cbe895;
+  border-color: #e0f7b5;
+}
+.section .part-2 .card form .botoes {
+  display: flex;
+  gap: 5px;
+}
+.section .part-2 .card form .botoes .btn {
+  text-decoration: none;
+  width: 50%;
+  background-color: #113e33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #113e33;
+  font-size: 1.2em;
+  font-weight: 900;
+  cursor: pointer;
+}
+.section .part-2 .card form .botoes button {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.section .part-2 .card form .botoes a {
+  background-color: transparent !important;
+  color: #113e33;
+}
+.section .part-2 .card .esqueceu {
+  padding-top: 30px;
+  text-decoration: none;
+  color: #113e3d;
+  font-weight: 900;
+  transition: 0.2s ease-in-out;
+}
+.section .part-2 .card .esqueceu:hover {
+  transform: translateY(-1px);
+  transition: 0.2s ease-in-out;
+  opacity: 0.7;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 3px;
+}
+
+#toggleButton {
+  font-size: 16px; /* Ajuste o valor para alterar o tamanho do ícone */
+}/*# sourceMappingURL=style.css.map */

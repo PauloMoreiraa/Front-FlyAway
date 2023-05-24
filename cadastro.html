@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar-se | FlyAway</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section class="section">
+        <div class="part-1">
+            <img src="img/11468681-design-de-logotipo-de-arvore-simbolo-do-logotipo-da-arvore-verde-minimalista-gratis-vetor.png" alt="">
+        </div>
+        <div class="part-2">
+            <div class="card">
+                <span>Crie Sua <strong>Conta</strong></span>
+                <p>Crie uma conta para continuar</p>
+                <form action="">
+                    <label>Nome</label>
+                    <input type="email" placeholder="Digite o seu nome" required>
+                    <label>Email</label>
+                    <input type="email" placeholder="Digite o seu email" required>
+                    <label>Senha</label>
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Digite a sua senha" required>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">
+                          <i id="toggleButton" class="fa fa-eye" aria-hidden="true"></i>
+                        </span>
+                      </div>
+                    <div class="botoes">
+                        <button class="btn" type="submit" data-tilt data-tilt-reverse="false" ata-tilt-glare data-tilt-max-glare="0.8">Criar</button>
+                        <a class="btn" href="index.html" data-tilt data-tilt-reverse="false" ata-tilt-glare data-tilt-max-glare="0.8">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+    <script src="js/password.js"></script>
+</body>
+</html>
